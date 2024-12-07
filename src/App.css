@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:#DAF7A6 ;
+  margin: 0;
+  padding: 0;
+
+}
+h1 {
+  text-align: center; /* Centers the text */
+  color: #333; /* Optional: set a color for the text */
+  margin: 0; /* Removes default margin */
+}
+
+/* Form Container Styling */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Element Styling */
+/* Form Elements Styling */
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 90%; /* Ensures the elements are not too wide, leaving space for padding and margins */
+  padding: 10px; /* Consistent padding for comfortable input */
+  margin-bottom: 15px; /* Space between form elements for better layout */
+  border: 1px solid #ccc; /* Light border for visibility */
+  border-radius: 4px; /* Rounded corners for a smoother look */
+  font-size: 16px; /* Legible font size */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Styling for buttons */
+.form-container button {
+  background-color: #DE3163; /* Green background color */
+  color: #ffffff; /* White text color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.form-container button:hover {
+  background-color: #DE3163; /* Darker green on hover */
+}
+
+
+/* Label Styling */
+.form-container label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Align form elements properly */
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the left */
+  margin-bottom: 15px; /* Space between each form item */
+}
+
+/* Button Styling */
+.form-container button {
+  background-color: #DE3163;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #DE3163;
+}
+
+/* List Container Styling */
+.list-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  overflow-x: auto;
+}
+/* Style the buttons in the table */
+td button {
+  background-color: #DE3163; /* Blue background color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding for button size */
+  margin: 2px; /* Space between buttons */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  font-size: 14px; /* Set a uniform font size */
+}
+
+/* Button hover effect */
+td button:hover {
+  background-color: #DE3163; /* Darker blue on hover */
+}
+
+/* Additional styling for the Edit and Delete buttons */
+td button.edit-button {
+  background-color: #DE3163; /* Green background color */
+}
+
+td button.edit-button:hover {
+  background-color: #DE3163; /* Darker green on hover */
+}
+
+td button.delete-button {
+  background-color: #dc3545; /* Red background color */
+}
+
+td button.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+td {
+  color: #555;
+}
+
+/* Table Row Styling */
+tr:hover {
+  background-color: #DAF7A6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container, .list-container {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  button {
+      padding: 6px 10px;
+      font-size: 14px;
+  }
+}
